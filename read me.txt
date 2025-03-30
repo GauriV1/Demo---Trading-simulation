@@ -1,0 +1,25 @@
+﻿Algorithmic Trading Simulation (2024)
+Project Type: Experimental / Exploratory
+Tools Used: Python, Streamlit, yFinance, Alpha Vantage API, Prophet, matplotlib, scikit-learn
+Files: Multiple interconnected Python files with simulations, strategy logic, and visualizations.
+________________
+
+
+This project began as a self-initiated experiment — I was genuinely curious about how algorithmic trading works and wanted to see if I could simulate something that mimicked AI-assisted financial decision-making. I’ll be the first to admit: I don’t yet understand this field on a minuscule or deeply technical level. I was playing around, learning as I went, and building iteratively with each Google search, error message, and “aha” moment. What started as one script soon evolved into a multi-file simulation environment that explores various trading strategies, forecasting models, and real-time data visualization.
+The simulation includes several components:
+* Moving Average Crossover strategy: Used to generate buy/sell signals based on short- and long-term moving averages.
+
+* Portfolio Backtesting Engine: Simulates how a portfolio might have performed given certain trading signals and user-defined capital/risk preferences.
+
+* Real-Time Prediction with Prophet: I integrated Facebook’s Prophet model to forecast stock prices over a 12-month horizon using real daily data fetched via Alpha Vantage.
+
+* High-Frequency Trading Mode: When users opt for a high-risk tolerance, the model switches to an HFT simulation, assuming every potential trade was successful. This was more of a theoretical visualization than a realistic execution engine, but it was a fun twist to simulate speed-based gains.
+
+* User Customization: Through Streamlit, users can interactively select stocks (e.g., from the S&P 500), risk thresholds, trading strategies, and timeframes — and the system generates simulated trades, profit/loss charts, and portfolio value evolution.
+
+I’ve incorporated multiple strategies (like arbitrage, market timing, mean reversion, and price-level movement) to showcase how a hypothetical AI might trade across market conditions. That said, many of these strategies are implemented in a simplified or illustrative form — I didn’t dive deep into the statistical theory or real market microstructure.
+________________
+
+
+This simulation is not perfect or production-ready — far from it. It’s a learning sandbox. It reflects my curiosity, my willingness to learn things I don’t yet fully grasp, and my desire to bridge what I can build with what I don’t yet understand. The code is split across several Python files, each building on the last. If you want to explore the logic or expand on it, you’ll find everything from prediction graphs to high-frequency trade simulations scattered through the repo.
+Ultimately, this project isn’t just about trading — it’s about experimentation, persistence, and learning-by-doing. It’s a stepping stone, and I’m proud of where it took me.
